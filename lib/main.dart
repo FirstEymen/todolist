@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/screens/add_page.dart';
+import 'package:todolist/screens/todo_list.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
- class MyApp extends StatelessWidget {
-   const MyApp({super.key});
- 
-   @override
-   Widget build(BuildContext context) {
-     return MaterialApp(
-       home: TodoListPage(),
-     );
-   }
- }
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
+      home: TodoListPage(),
+    );
+  }
+}
  
